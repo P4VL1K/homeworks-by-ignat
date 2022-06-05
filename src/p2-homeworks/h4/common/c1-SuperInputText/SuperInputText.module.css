@@ -1,0 +1,24 @@
+.superInput {
+    color: black;
+    font-weight: bold;
+}
+
+.errorInput {
+    border: 3px solid red;
+    background-color: lightpink;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.defaultInput:focus {
+    outline: none;
+    background-color: white;
+    border-color: green;
+}
+
+.blue {
+    background-color: firebrick;
+}

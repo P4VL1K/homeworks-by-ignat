@@ -1,0 +1,45 @@
+.default {
+   margin: 20px;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #61dafb;
+}
+
+.red {
+    margin: 20px;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    background: red;
+}
+
+.red:hover {
+    color: palevioletred;
+    background-color: rebeccapurple;
+}
+
+.default:disabled {
+    opacity: 0.5;
+    color: black;
+}
+
+.default:hover {
+    color: rebeccapurple;
+    background-color: palevioletred;
+}
+
+.default:disabled:hover {
+    color: black;
+    margin: 20px;
+    width: 80px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #61dafb;
+}

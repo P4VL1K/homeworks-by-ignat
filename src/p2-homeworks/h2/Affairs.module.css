@@ -1,0 +1,16 @@
+.main {
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+.names {
+    color: rebeccapurple;
+    padding-left: 30px;
+    font-weight: bold;
+    font-family: Liberation;
+}
+
+.active {
+    background-color: palevioletred;
+    color: black;
+}

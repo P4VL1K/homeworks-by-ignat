@@ -1,0 +1,22 @@
+.blue {
+    border-bottom: 5px solid firebrick;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testSpanError {
+    color: blue;
+}
+
+.hw {
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.main {
+    background-color: orange;
+}

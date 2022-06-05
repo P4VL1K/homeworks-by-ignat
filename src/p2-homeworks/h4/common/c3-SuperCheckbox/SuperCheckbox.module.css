@@ -1,0 +1,10 @@
+.checkbox {
+    border: 4mm ridge rgba(211, 220, 50, .6);
+    width: 20px;
+    height: 20px;
+    background-color: green;
+}
+
+.spanClassName {
+
+}

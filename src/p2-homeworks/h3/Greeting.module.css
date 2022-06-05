@@ -1,0 +1,19 @@
+
+
+.error {
+    border: 1px solid red;
+}
+
+.main {
+    padding: 30px;
+    background-color: lightpink;
+}
+
+.btnClass {
+    background-color: blue;
+    color: floralwhite;
+}
+
+.btnClass:disabled {
+    opacity: 20%;
+}
