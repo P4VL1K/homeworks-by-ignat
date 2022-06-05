@@ -6,39 +6,44 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 
 type SuperCheckboxPropsType = DefaultInputPropsType & {
     onChangeChecked?: (checked: boolean) => void
-    spanClassName?: string
+    spanClassName?: string,
+    checked:boolean
 }
 
 const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     {
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
         onChange, onChangeChecked,
+        checked,
         className, spanClassName,
         children, // в эту переменную попадёт текст, типизировать не нужно так как он затипизирован в React.FC
 
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
-    const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange && onChange(e)
+    const onChangeCallback = (value:boolean) => {
+        console.log(value)
+        onChange && onChange(value as unknown as ChangeEvent<HTMLInputElement>)
 
-        onChangeChecked && onChangeChecked(e.currentTarget.checked)
+        onChangeChecked && onChangeChecked(value)
         // сделайте так чтоб работал onChange и onChangeChecked
     }
 
-    const finalInputClassName = `${s.checkbox} ${className ? className : ''}`
+    const finalInputClassName = `${s.customCheckbox} ${className ? className : ''}`
 
     return (
-        <label>
+        <>
             <input
                 type='checkbox'
-                onChange={onChangeCallback}
                 className={finalInputClassName}
-
-                {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
+                name={"test"}
+                checked={checked}
+                onChange={() => {}}
+                {...restProps}
             />
+            <label htmlFor={"test"} onClick={(e) => {onChangeCallback(!checked)}}/>
             {children && <span className={s.spanClassName}>{children}</span>}
-        </label> // благодаря label нажатие на спан передастся в инпут
+        </> // благодаря label нажатие на спан передастся в инпут
     )
 }
 
