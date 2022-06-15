@@ -1,4 +1,6 @@
 import React from 'react'
+import {Route} from "react-router-dom";
+import PreJunior from "./pages/PreJunior";
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
