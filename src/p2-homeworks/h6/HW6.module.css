@@ -1,0 +1,31 @@
+.hw {
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.span {
+    display: flex;
+    margin-top: 16px;
+    padding-left: 30px;
+    color: green;
+}
+
+.add {
+    padding-left: 70px;
+    color: yellow;
+}
+
+.main {
+    background-color: mediumpurple;
+}
+
+.inputClass {
+    display: flex;
+    background-color: midnightblue !important;
+    margin-top: 14px;
+    margin-left: 70px;
+    border-color: #61dafb !important;
+    border-radius: 5px;
+    width: 130px;
+    color: yellow;
+}
