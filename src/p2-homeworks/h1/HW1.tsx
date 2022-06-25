@@ -13,7 +13,7 @@ const messageData = {
 
 const HW1 = () => {
     return (
-        <div>
+        <div className={s.main}>
            <div className={s.hw1}>Homeworks 1</div>
 
             {/*should work (должно работать)*/}

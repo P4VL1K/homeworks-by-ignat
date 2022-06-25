@@ -1,7 +1,11 @@
+.main {
+    background-color: #e0c46d;
+}
+
 .message {
     padding: 30px;
     display: flex;
-    background-color: green;
+    /*background-color: green;*/
     padding-top: 50px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -24,7 +28,6 @@
 .photo {
     height: 50px;
     width: 50px;
-
     border-radius: 50%;
 }
 

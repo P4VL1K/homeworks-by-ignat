@@ -1,16 +1,18 @@
 import React, {useState} from 'react'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
+import s from './HW7.module.css'
+
+
 
 const arr = ['x', 'y', 'z']
 
 function HW7() {
-    const [value, onChangeOption] = useState(arr[1])
-
+    const [value, onChangeOption] = useState<string>(arr[1])
+    console.log(value)
     return (
-        <div>
-            <hr/>
-            homeworks 7
+        <div className={s.main}>
+            <h3>Homeworks 7</h3>
 
             {/*should work (должно работать)*/}
             <div>
@@ -29,11 +31,9 @@ function HW7() {
                 />
             </div>
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
             {/*<AlternativeSuperRadio/>*/}
-            <hr/>
         </div>
     )
 }

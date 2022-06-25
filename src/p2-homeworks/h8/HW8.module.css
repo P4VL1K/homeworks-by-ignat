@@ -1,0 +1,15 @@
+.main {
+    background-color: #bfa6ee;
+}
+
+.list {
+    padding-left: 30px;
+    padding-right: 1120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    padding-left: 30px;
+    margin-top: 0;
+}

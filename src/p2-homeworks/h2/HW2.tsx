@@ -40,7 +40,6 @@ function HW2() {
 
     return (
         <div className={s.main}>
-            <hr/>
             <b>Homework 2</b>
 
             {/*should work (должно работать)*/}
@@ -51,10 +50,8 @@ function HW2() {
                 deleteAffairCallback={deleteAffairCallback}
             />
 
-            <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
         </div>
     )
 }
