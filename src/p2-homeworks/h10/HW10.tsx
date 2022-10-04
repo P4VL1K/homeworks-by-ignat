@@ -22,7 +22,7 @@ function HW10() {
 
     return (
         <div className={st.main}>
-            <h3 className={s.title}>Homeworks 9</h3>
+            <h3 className={s.title}>Homeworks 10</h3>
 
             {/*should work (должно работать)*/}
             {loading
