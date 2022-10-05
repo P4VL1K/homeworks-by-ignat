@@ -21,3 +21,12 @@
 .some-text {
     color: darkslateblue;
 }
+
+.title {
+    padding:30px;
+    margin: 0;
+}
+
+.selector {
+    padding: 30px;
+}
